@@ -1,0 +1,88 @@
+{
+  "name": "prompts.mdx",
+  "version": "1.1.0",
+  "description": "Portable Agent Skills & Prompts for ANY Coding Agent (2026+). Follows the open Agent Skills standard (SKILL.md).",
+  "author": "rishistyping",
+  "license": "MIT",
+  "repository": "https://github.com/rishistyping/prompts.mdx",
+  "homepage": "https://github.com/rishistyping/prompts.mdx",
+  "keywords": [
+    "agent-skills",
+    "prompts",
+    "claude-code",
+    "cursor",
+    "codex",
+    "gemini-cli",
+    "windsurf",
+    "roo",
+    "ai-coding",
+    "portable",
+    "here-now"
+  ],
+  "skills": [
+    {
+      "name": "here-now",
+      "path": "skills/here-now/SKILL.md",
+      "description": "Instant web publishing for any HTML/static artifact. One-command 'publish to here.now' → live URL.",
+      "tags": ["publishing", "sharing", "here-now", "universal"]
+    },
+    {
+      "name": "strict-typescript",
+      "path": "skills/strict-typescript/SKILL.md",
+      "description": "Strict TypeScript + ESLint + Prettier enforcement. Zero any, full type safety, modern best practices.",
+      "tags": ["typescript", "linting", "quality", "frontend"]
+    },
+    {
+      "name": "security-review",
+      "path": "skills/security-review/SKILL.md",
+      "description": "Comprehensive security audits and secure coding (OWASP, auth, injection, secrets, headers).",
+      "tags": ["security", "audit", "owasp", "auth"]
+    },
+    {
+      "name": "react-nextjs",
+      "path": "skills/react-nextjs/SKILL.md",
+      "description": "Modern React 19 + Next.js 15+ best practices (Server Components, App Router, performance, a11y, SEO).",
+      "tags": ["react", "nextjs", "frontend", "performance"]
+    },
+    {
+      "name": "monorepo-best-practices",
+      "path": "skills/monorepo-best-practices/SKILL.md",
+      "description": "Turborepo / Nx / pnpm workspaces patterns, caching, versioning, CI optimization, and scaling.",
+      "tags": ["monorepo", "turborepo", "nx", "pnpm", "build"]
+    },
+    {
+      "name": "custom-example",
+      "path": "skills/custom-example/SKILL.md",
+      "description": "Template for creating new universal skills. Copy and customize.",
+      "tags": ["template", "example"]
+    }
+  ],
+  "core_files": [
+    "CLAUDE.md",
+    "setup.sh",
+    "setup.ps1",
+    "flatten.sh"
+  ],
+  "install": {
+    "bash": "./setup.sh",
+    "powershell": ".\\setup.ps1",
+    "manual": "Copy skills/ folder to ~/.claude/skills/, ~/.cursor/skills/, or project .cursor/skills/"
+  },
+  "compatibility": {
+    "agents": [
+      "Claude Code",
+      "Cursor",
+      "Codex / OpenAI agents",
+      "Gemini CLI",
+      "Windsurf",
+      "Roo Code",
+      "Kiro",
+      "Trae",
+      "OpenClaw",
+      "Continue.dev (via rules import)"
+    ],
+    "standard": "Agent Skills (agentskills.io / SKILL.md + YAML frontmatter)",
+    "year": 2026
+  },
+  "generated_at": "2026-05-10"
+}
