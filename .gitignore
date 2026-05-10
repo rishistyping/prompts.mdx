@@ -1,0 +1,12 @@
+# Ignore personal credentials or secrets
+**/.herenow/credentials
+**/*-api-key*
+**/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.log
